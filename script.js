@@ -6,6 +6,7 @@ function threeSum(arr, target) {
     const target2 = target - a;
     let l = i + 1;
     let r = arr.length - 1;
+	  
     while (l < r) {
       if (Math.abs(target - (arr[l] + arr[r] + a)) <= Math.abs(target - ans)) {
         ans = arr[l] + arr[r] + a;
